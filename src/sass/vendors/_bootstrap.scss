@@ -1,0 +1,11 @@
+// Entire Bootstrap scss:
+// @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+// 1. Including functions first (to manipulate colors, SVGs, calc, etc)
+@import '../../../node_modules/bootstrap/scss/functions';
+
+// 2. Including any default variable overrides here
+
+// 3. Including remainder of required Bootstrap stylesheets
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
