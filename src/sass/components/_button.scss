@@ -1,1 +1,39 @@
-//
+@use '../base/variables' as *;
+
+.btn {
+  font-family: var(--ff-main);
+  font-weight: 700;
+  font-size: var(--fs-300);
+  line-height: 2;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--clr-text);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.2rem 2.8rem;
+  padding-right: 18rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:active {
+    background-color: var(--clr-planet);
+    border: 1px solid transparent;
+  }
+  &:hover {
+    background-color: var(--clr-btn-hover);
+    border: 1px solid transparent;
+  }
+  .btn__number {
+    margin-right: 2.8rem;
+    font-size: 12px;
+    line-height: 25px;
+    /* identical to box height, or 208% */
+
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}

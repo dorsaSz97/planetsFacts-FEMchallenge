@@ -9,3 +9,14 @@
 // 3. Including remainder of required Bootstrap stylesheets
 @import '../../../node_modules/bootstrap/scss/variables';
 @import '../../../node_modules/bootstrap/scss/mixins';
+
+@import '../abstracts/map-amends';
+
+// 4. Include any optional Bootstrap components as you like
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+
+.row {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}

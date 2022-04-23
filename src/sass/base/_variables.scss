@@ -1,1 +1,14 @@
-//
+@use 'fonts';
+
+:root {
+  // colors
+  --clr-primary: hsl(240, 66%, 8%);
+  --clr-text: hsl(0, 0%, 100%);
+  --clr-light: hsla(0, 0%, 100%, 0.5);
+  --clr-btn-hover: hsl(240, 17%, 26%);
+  --clr-border: hsla(0, 0%, 100%, 0.2);
+
+  // font-families
+  --ff-main: 'Spartan', sans-serif;
+  --ff-heading-med: 'Antonio', sans-serif;
+}

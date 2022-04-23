@@ -7,7 +7,7 @@
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "copy:assets": "copyfiles -u 1 './src/assets/**/**/*' public",
-    "copy:js": "copyfiles -u 1 './src/js/*.js' public",
+    "copy:js": "copyfiles -u 1 './src/js/*' public",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:assets": "onchange 'src/assets/**/**/*' -- npm run copy:assets",
@@ -20,6 +20,7 @@
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "autoprefixer": "^10.4.2",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.8.1",

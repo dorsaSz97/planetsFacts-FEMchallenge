@@ -1,5 +1,43 @@
 // planets animation
 // text animation
-// starts animation
-// shooting star animation
-// solar system animation (?)
+@keyframes twinkleStar {
+  from {
+    fill: rgba(255, 255, 255, 0.2);
+  }
+  to {
+    fill: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes fadeinMenu {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  10% {
+    opacity: 1;
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes fadeoutMenu {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

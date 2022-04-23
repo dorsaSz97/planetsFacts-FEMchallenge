@@ -1,1 +1,23 @@
-//
+@use 'variables' as *;
+
+// DONE
+body {
+  position: relative;
+  font-family: var(--ff-main);
+  font-weight: 400;
+  color: var(--clr-text);
+  background-color: var(--clr-primary);
+  overflow-x: hidden;
+}
+
+.heading-med {
+  font-family: var(--ff-heading-med);
+  font-weight: 500;
+}
+
+// DONE
+.heading-primary {
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: -1.05px;
+}
