@@ -349,22 +349,23 @@
         .then(function (data) {
           planetData = data;
         });
-      let flyInAnimComplete = false;
+      let flyInAnimComplete = true;
       function flyInAnim(target) {
-        // change the planet image
+        const planetImgcurrently = currPlanet;
+        planetImg.src = `assets/img/planet-${planetImgcurrently}.svg`;
         flyInAnimComplete = false;
         anime({
           targets: target,
           translateX: [
             { value: -800, duration: 0, delay: 0 },
-            { value: 0, duration: 2000, delay: 0 },
+            { value: 0, duration: 1000, delay: 0 },
           ],
           translateY: [
             { value: 800, duration: 0, delay: 0 },
-            { value: 0, duration: 2000, delay: 0 },
+            { value: 0, duration: 1000, delay: 0 },
           ],
           scale: [
-            { value: 3, duration: 200, delay: 0, easing: 'easeOutExpo' },
+            { value: 1.4, duration: 200, delay: 0, easing: 'easeOutExpo' },
             { value: 1, duration: 1000 },
           ],
           opacity: '1',
@@ -391,22 +392,15 @@
           // ],
           opacity: [
             {
-              duration: 900,
+              duration: 500,
               value: '0',
             },
           ],
-          scale: [
-            { value: 0, duration: 1000, delay: 0, easing: 'easeOutExpo' },
-          ],
-          backgroundColor: 'white',
+          scale: [{ value: 0, duration: 100, delay: 0, easing: 'easeOutExpo' }],
           easing: 'easeOutElastic(1, .8)',
           loop: false,
           complete: () => {
-            flyInAnimComplete = true;
             flyInAnim(target);
-            planetImg.classList.remove(prevPlanet);
-            planetImg.classList.add(currPlanet);
-            planetImg.src = `assets/img/planet-${currPlanet}.svg`;
           },
         });
       }
@@ -450,8 +444,9 @@
       // };
 
       contentLinks.forEach(contentLink => {
-        if (flyInAnimComplete) {
-          contentLink.addEventListener('click', e => {
+        contentLink.addEventListener('click', e => {
+          console.log(flyInAnimComplete);
+          if (flyInAnimComplete) {
             if (!e.target.classList.contains('active')) {
               // prevent clicking on the contentLink that is already active
               changeContent(e.target.dataset.contentname);
@@ -466,8 +461,8 @@
                 contentLink.classList.add('active');
               }
             });
-          });
-        }
+          }
+        });
       });
 
       // Clicking on planets' names links
