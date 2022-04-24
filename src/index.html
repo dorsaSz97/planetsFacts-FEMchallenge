@@ -27,7 +27,8 @@
     <title>Planets Facts | FEM Challenge</title>
   </head>
 
-  <body>
+  <body class="container">
+    <div class="hamMenubg"></div>
     <!-- DONE Background -->
     <div class="bg">
       <svg class="sky" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -483,6 +484,8 @@
             setTimeout(() => {
               hamburgerMenu.classList.add('hide');
               hamburgerMenu.classList.remove('showing');
+              body.style.position = 'relative';
+              document.querySelector('.hamMenubg').classList.remove('active');
               anime({
                 targets: '.toggle-item',
                 translateX: -800,
@@ -601,6 +604,8 @@
         if (!hamburgerMenu.classList.contains('showing')) {
           hamburgerMenu.classList.remove('hide');
           hamburgerMenu.classList.add('showing');
+          body.style.position = 'fixed';
+          document.querySelector('.hamMenubg').classList.add('active');
           anime({
             targets: '.toggle-item',
             translateX: [-800, 10],
@@ -609,6 +614,8 @@
         } else {
           hamburgerMenu.classList.remove('showing');
           hamburgerMenu.classList.add('hide');
+          body.style.position = 'relative';
+          document.querySelector('.hamMenubg').classList.remove('active');
           anime({
             targets: '.toggle-item',
             translateX: -800,
