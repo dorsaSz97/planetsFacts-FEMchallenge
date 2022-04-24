@@ -484,7 +484,7 @@
             setTimeout(() => {
               hamburgerMenu.classList.add('hide');
               hamburgerMenu.classList.remove('showing');
-              body.style.position = 'relative';
+              document.querySelector('main').style.display = 'block';
               document.querySelector('.hamMenubg').classList.remove('active');
               anime({
                 targets: '.toggle-item',
@@ -604,7 +604,7 @@
         if (!hamburgerMenu.classList.contains('showing')) {
           hamburgerMenu.classList.remove('hide');
           hamburgerMenu.classList.add('showing');
-          body.style.position = 'fixed';
+          document.querySelector('main').style.display = 'none';
           document.querySelector('.hamMenubg').classList.add('active');
           anime({
             targets: '.toggle-item',
@@ -614,7 +614,7 @@
         } else {
           hamburgerMenu.classList.remove('showing');
           hamburgerMenu.classList.add('hide');
-          body.style.position = 'relative';
+          document.querySelector('main').style.display = 'block';
           document.querySelector('.hamMenubg').classList.remove('active');
           anime({
             targets: '.toggle-item',
