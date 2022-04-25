@@ -1,5 +1,12 @@
 @use '../abstracts/mixins' as *;
 
+body {
+  :first-child {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
 [data-planetName='mercury'] {
   --clr-planet: hsl(194, 48%, 49%);
 }

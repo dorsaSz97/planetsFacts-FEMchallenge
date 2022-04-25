@@ -146,11 +146,12 @@ toggle.querySelector('i').addEventListener('click', () => {
       delay: anime.stagger(100),
     });
   } else {
-    hamburgerMenu.classList.remove('showing');
-    hamburgerMenu.classList.add('hide');
     mainSection.style.display = 'block';
     hamburgerMenuBg.classList.remove('active');
     hamburgerMenuBg.classList.add('deactive');
+    hamburgerMenu.classList.remove('showing');
+    hamburgerMenu.classList.add('hide');
+
     anime({
       targets: '.toggle-item',
       translateX: -800,
@@ -178,7 +179,7 @@ const activateCurrPlanetLink = () => {
 function changePlanet(planetnumber, planetname) {
   // prevent anything from happening when clicking on the current planet's link
   if (planetname === currPlanet) return null;
-  flyOutAnim(planetImg);
+
   prevPlanet = currPlanet;
   currPlanet = planetname;
   currentIndex = planetnumber;
@@ -243,6 +244,7 @@ planetLinks.forEach(planetLink => {
         .closest('li')
         .parentElement.parentElement.classList.contains('d-none')
     ) {
+      flyOutAnim(planetImg);
       console.log('what');
       activateCurrPlanetLink();
     }

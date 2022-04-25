@@ -12,6 +12,7 @@
     "copy": "npm-run-all --parallel copy:*",
     "watch:assets": "onchange 'src/assets/**/**/*' -- npm run copy:assets",
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+    "watch:js": "onchange 'src/js/*' -- npm run copy:js",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
