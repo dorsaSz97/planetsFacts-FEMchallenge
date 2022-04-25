@@ -178,6 +178,7 @@ const activateCurrPlanetLink = () => {
 
 function changePlanet(planetnumber, planetname) {
   // prevent anything from happening when clicking on the current planet's link
+  planetGeoImg.classList.add('hide');
   if (planetname === currPlanet) return null;
 
   prevPlanet = currPlanet;
@@ -211,10 +212,15 @@ function changePlanet(planetnumber, planetname) {
 planetLinks.forEach(planetLink => {
   planetLink.addEventListener('click', e => {
     // changing planets content
-    changePlanet(
-      planetLink.dataset.planetnumber,
-      planetLink.dataset.planetname
-    );
+
+    if (
+      changePlanet(
+        e.target.closest('.planet-link').dataset.planetnumber,
+        e.target.closest('.planet-link').dataset.planetname
+      ) === null
+    ) {
+      return null;
+    }
 
     // changing active links
     // if we are on mobile
@@ -234,6 +240,9 @@ planetLinks.forEach(planetLink => {
           delay: anime.stagger(100),
         });
       }, 600);
+      setTimeout(() => {
+        flyOutAnim(planetImg);
+      }, 1000);
 
       activateCurrPlanetLink();
     }
