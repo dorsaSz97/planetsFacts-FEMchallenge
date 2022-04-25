@@ -27,293 +27,293 @@
     <title>Planets Facts | FEM Challenge</title>
   </head>
 
-  <body class="container-fluid container-xxl">
-    <div class="hamMenubg"></div>
-    <!-- DONE Background -->
-    <div class="bg">
-      <svg class="sky" xmlns="http://www.w3.org/2000/svg"></svg>
-      <div class="shootingstars"></div>
-    </div>
+  <body>
+    <div class="container-fluid container-xxl">
+      <!-- Backgrounds -->
+      <div class="mobile-menu__bg"></div>
 
-    <!-- DONE -->
-    <!-- Header (/ navigation) -->
-    <header class="header">
-      <div class="px-7 text-uppercase">
-        <div class="row align-items-center">
-          <!-- Logo -->
-          <h1
-            class="col-6 col-md-12 col-lg-5 py-4 text-md-center text-lg-start heading-med heading-primary"
-          >
-            <a href="#">The planets</a>
-          </h1>
+      <div class="bg">
+        <svg class="sky" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="shootingstars"></div>
+      </div>
 
-          <!-- Hamburger toggle -->
-          <div
-            class="col-6 d-flex justify-content-end d-md-none header__toggle"
-          >
-            <i class="bi bi-list d-flex align-items-center">&nbsp;</i>
-          </div>
-          <!-- Hamburger menu -->
-          <ul
-            class="col-12 d-flex flex-column d-md-none pt-7 px-7 header__list"
-          >
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="0"
-              data-planetname="mercury"
+      <!-- Header (/ navigation) -->
+      <header class="header">
+        <div class="px-7 text-uppercase">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <h1
+              class="col-6 col-md-12 col-lg-5 py-4 text-md-center text-lg-start heading-primary"
             >
-              <a href="#">Mercury</a>
-            </li>
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="1"
-              data-planetname="venus"
-            >
-              <a href="#">Venus</a>
-            </li>
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="2"
-              data-planetname="earth"
-            >
-              <a href="#">Earth</a>
-            </li>
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="3"
-              data-planetname="mars"
-            >
-              <a href="#">Mars</a>
-            </li>
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="4"
-              data-planetname="jupiter"
-            >
-              <a href="#">Jupiter</a>
-            </li>
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="5"
-              data-planetname="saturn"
-            >
-              <a href="#">Saturn</a>
-            </li>
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="6"
-              data-planetname="uranus"
-            >
-              <a href="#">Uranus</a>
-            </li>
-            <li
-              class="planet-link toggle-item"
-              data-planetnumber="7"
-              data-planetname="neptune"
-            >
-              <a href="#">Neptune</a>
-            </li>
-          </ul>
+              <a href="#">The planets</a>
+            </h1>
 
-          <!-- Navigation -->
-          <nav
-            class="col-6 col-md-12 col-lg-7 align-self-lg-stretch d-none d-md-flex align-items-center pt-md-7 pt-lg-0 header__nav"
-          >
-            <ul class="d-flex align-items-center justify-content-between">
+            <!-- Hamburger toggle -->
+            <div
+              class="col-6 d-flex justify-content-end d-md-none header__toggle"
+            >
+              <i class="bi bi-list d-flex align-items-center">&nbsp;</i>
+            </div>
+
+            <!-- Hamburger menu -->
+            <ul
+              class="col-12 d-flex flex-column d-md-none pt-7 px-7 header__list"
+            >
               <li
-                class="planet-link active active-tablet"
+                class="planet-link toggle-item"
                 data-planetnumber="0"
                 data-planetname="mercury"
               >
                 <a href="#">Mercury</a>
               </li>
               <li
-                class="planet-link"
+                class="planet-link toggle-item"
                 data-planetnumber="1"
                 data-planetname="venus"
               >
                 <a href="#">Venus</a>
               </li>
               <li
-                class="planet-link"
+                class="planet-link toggle-item"
                 data-planetnumber="2"
                 data-planetname="earth"
               >
                 <a href="#">Earth</a>
               </li>
               <li
-                class="planet-link"
-                data-planetname="mars"
+                class="planet-link toggle-item"
                 data-planetnumber="3"
+                data-planetname="mars"
               >
                 <a href="#">Mars</a>
               </li>
               <li
-                class="planet-link"
-                data-planetname="jupiter"
+                class="planet-link toggle-item"
                 data-planetnumber="4"
+                data-planetname="jupiter"
               >
                 <a href="#">Jupiter</a>
               </li>
               <li
-                class="planet-link"
-                data-planetname="saturn"
+                class="planet-link toggle-item"
                 data-planetnumber="5"
+                data-planetname="saturn"
               >
                 <a href="#">Saturn</a>
               </li>
               <li
-                class="planet-link"
-                data-planetname="uranus"
+                class="planet-link toggle-item"
                 data-planetnumber="6"
+                data-planetname="uranus"
               >
                 <a href="#">Uranus</a>
               </li>
               <li
-                class="planet-link"
-                data-planetname="neptune"
+                class="planet-link toggle-item"
                 data-planetnumber="7"
+                data-planetname="neptune"
               >
                 <a href="#">Neptune</a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <section class="planet" data-planetname="mercury">
-        <nav>
-          <ul
-            class="d-flex d-md-none justify-content-around px-5 fs-6 fw-bold tabs"
-          >
-            <li>
-              <button
-                class="py-6 overview text-uppercase tab active content-link"
-                data-contentname="overview"
-              >
-                Overview
-              </button>
-            </li>
-            <li>
-              <button
-                class="py-6 structure text-uppercase tab content-link"
-                data-contentname="structure"
-              >
-                Structure
-              </button>
-            </li>
-            <li>
-              <button
-                class="py-6 geology text-uppercase tab content-link"
-                data-contentname="geology"
-              >
-                Surface
-              </button>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="container-lg py-6" style="width: 90%">
-          <div
-            class="row justify-content-between planet__content planet__content--overview"
-          >
-            <figure
-              class="col-12 col-lg-8 py-10 d-flex align-items-center justify-content-center"
+            <!-- Navigation -->
+            <nav
+              class="col-6 col-md-12 col-lg-7 align-self-lg-stretch d-none d-md-flex align-items-center pt-md-7 pt-lg-0 header__nav"
             >
-              <img
-                class="mx-auto mx-lg-0 content-diff planet-diff planet-img mercury"
-                src="assets/img/planet-mercury.svg"
-                alt="mercury"
-              />
-              <img class="planet-geo planet-diff" src="" />
-            </figure>
-
-            <div
-              class="col-12 col-lg-4 row flex-lg-column gap-lg-10 justify-content-between px-0 py-10 text-center text-md-start planet__info"
-            >
-              <div class="col-12 col-md-5 col-lg-12 planet__description">
-                <h2
-                  class="planet-change text-uppercase heading-secondary title"
+              <ul class="d-flex align-items-center justify-content-between">
+                <li
+                  class="planet-link active active-tablet"
+                  data-planetnumber="0"
+                  data-planetname="mercury"
                 >
-                  Mercury
-                </h2>
-                <p class="my-5 content-diff planet__paragraph">
-                  Mercury is the smallest planet in the Solar System and the
-                  closest to the Sun. Its orbit around the Sun takes 87.97 Earth
-                  days, the shortest of all the Sun's planets. Mercury is one of
-                  four terrestrial planets in the Solar System, and is a rocky
-                  body like Earth.
-                </p>
-                <a class="fs-5 source" href="#"
-                  >Source: Wikipedia
-                  <img
-                    class="ms-1"
-                    src="assets/img/icon-source.svg"
-                    alt="arrow"
-                /></a>
-              </div>
+                  <a href="#">Mercury</a>
+                </li>
+                <li
+                  class="planet-link"
+                  data-planetnumber="1"
+                  data-planetname="venus"
+                >
+                  <a href="#">Venus</a>
+                </li>
+                <li
+                  class="planet-link"
+                  data-planetnumber="2"
+                  data-planetname="earth"
+                >
+                  <a href="#">Earth</a>
+                </li>
+                <li
+                  class="planet-link"
+                  data-planetnumber="3"
+                  data-planetname="mars"
+                >
+                  <a href="#">Mars</a>
+                </li>
+                <li
+                  class="planet-link"
+                  data-planetnumber="4"
+                  data-planetname="jupiter"
+                >
+                  <a href="#">Jupiter</a>
+                </li>
+                <li
+                  class="planet-link"
+                  data-planetnumber="5"
+                  data-planetname="saturn"
+                >
+                  <a href="#">Saturn</a>
+                </li>
+                <li
+                  class="planet-link"
+                  data-planetnumber="6"
+                  data-planetname="uranus"
+                >
+                  <a href="#">Uranus</a>
+                </li>
+                <li
+                  class="planet-link"
+                  data-planetnumber="7"
+                  data-planetname="neptune"
+                >
+                  <a href="#">Neptune</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-              <div
-                class="col-md-5 col-lg-12 d-none d-md-flex flex-column justify-content-center gap-4 ms-auto border-md-0 fs-6 fw-bold text-uppercase planet__sections"
-              >
-                <div
-                  class="content-link overview d-flex gap-7 p-4 section active"
+      <main class="main-section">
+        <section class="planet" data-planetname="mercury">
+          <nav>
+            <ul
+              class="d-flex d-md-none justify-content-around px-5 fs-6 fw-bold content-links"
+            >
+              <li>
+                <button
+                  class="py-6 text-uppercase content-link active"
                   data-contentname="overview"
                 >
-                  <span class="number">01</span> overview
-                </div>
-                <div
-                  class="content-link structure d-flex gap-7 p-4 section"
+                  Overview
+                </button>
+              </li>
+              <li>
+                <button
+                  class="py-6 text-uppercase content-link"
                   data-contentname="structure"
                 >
-                  <span class="number">02</span> internal structure
-                </div>
-                <div
-                  class="content-link geology d-flex gap-7 p-4 section"
+                  Structure
+                </button>
+              </li>
+              <li>
+                <button
+                  class="py-6 text-uppercase content-link"
                   data-contentname="geology"
                 >
-                  <span class="number">03</span> surface geology
+                  Surface
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="container-lg py-6 planet__content">
+            <div class="row justify-content-between planet__top">
+              <figure
+                class="col-12 col-lg-8 py-10 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  class="mx-auto mx-lg-0 content-diff planet-diff planet-img mercury"
+                  src="assets/img/planet-mercury.svg"
+                  alt="mercury"
+                />
+                <img class="geo-img planet-diff" src="" alt="" />
+              </figure>
+
+              <div
+                class="col-12 col-lg-4 row flex-lg-column gap-lg-10 justify-content-between px-0 py-10 text-center text-md-start planet__info"
+              >
+                <div class="col-12 col-md-5 col-lg-12 planet__description">
+                  <h2 class="text-uppercase planet-diff heading-secondary">
+                    Mercury
+                  </h2>
+                  <p class="my-5 content-diff planet__paragraph">
+                    Mercury is the smallest planet in the Solar System and the
+                    closest to the Sun. Its orbit around the Sun takes 87.97
+                    Earth days, the shortest of all the Sun's planets. Mercury
+                    is one of four terrestrial planets in the Solar System, and
+                    is a rocky body like Earth.
+                  </p>
+                  <a
+                    class="fs-5 source"
+                    href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+                    >Source: Wikipedia
+                    <img
+                      class="ms-1"
+                      src="assets/img/icon-source.svg"
+                      alt="arrow"
+                  /></a>
+                </div>
+
+                <div
+                  class="col-md-5 col-lg-12 d-none d-md-flex flex-column justify-content-center gap-4 ms-auto border-md-0 fs-6 fw-bold text-uppercase planet__sections"
+                >
+                  <div
+                    class="d-flex gap-7 p-4 content-link active"
+                    data-contentname="overview"
+                  >
+                    <span class="number">01</span> overview
+                  </div>
+                  <div
+                    class="d-flex gap-7 p-4 content-link"
+                    data-contentname="structure"
+                  >
+                    <span class="number">02</span> internal structure
+                  </div>
+                  <div
+                    class="d-flex gap-7 p-4 content-link"
+                    data-contentname="geology"
+                  >
+                    <span class="number">03</span> surface geology
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- DONE -->
-          <div class="row gap-3 gap-lg-6 text-uppercase planet__stats">
-            <div
-              class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
-            >
-              <h4 class="stat__title">Rotation time</h4>
-              <span class="planet-diff stat__number rotation">58.6 Days</span>
-            </div>
-            <div
-              class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
-            >
-              <h4 class="stat__title">Revolution time</h4>
-              <span class="stat__number planet-diff revolution"
-                >87.97 Days</span
+            <div class="row gap-3 gap-lg-6 text-uppercase planet__stats">
+              <div
+                class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
               >
-            </div>
-            <div
-              class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
-            >
-              <h4 class="stat__title">Rotation time</h4>
-              <span class="stat__number planet-diff radius">2,439.7 KM</span>
-            </div>
-            <div
-              class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
-            >
-              <h4 class="stat__title">Average temp.</h4>
-              <span class="stat__number planet-diff temperature"
-                >430 &deg;C
-              </span>
+                <h4 class="stat__title">Rotation time</h4>
+                <span class="planet-diff stat__number rotation">58.6 Days</span>
+              </div>
+              <div
+                class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
+              >
+                <h4 class="stat__title">Revolution time</h4>
+                <span class="stat__number planet-diff revolution"
+                  >87.97 Days</span
+                >
+              </div>
+              <div
+                class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
+              >
+                <h4 class="stat__title">Rotation time</h4>
+                <span class="stat__number planet-diff radius">2,439.7 KM</span>
+              </div>
+              <div
+                class="col-12 col-md-2 d-flex flex-md-column justify-content-between align-items-center align-items-md-start flex-grow-1 px-3 py-4 stat"
+              >
+                <h4 class="stat__title">Average temp.</h4>
+                <span class="stat__number planet-diff temperature"
+                  >430 &deg;C
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
 
     <!-- Bootstrap Bundle with Popper -->
     <script
@@ -325,305 +325,7 @@
     <!-- Animejs script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
-    <script>
-      const toggle = document.querySelector('.header__toggle');
-      const hamburgerMenu = document.querySelector('.header__list');
-      const planetSection = document.querySelector('.planet');
-      const planetImg = document.querySelector('.planet-img');
-      const planetGeoImg = document.querySelector('.planet-geo');
-      const contentDiffs = document.querySelectorAll('.content-diff');
-      const contentLinks = document.querySelectorAll('.content-link');
-      const planetDiffs = document.querySelectorAll('.planet-change');
-      const planetLinks = document.querySelectorAll('.planet-link');
-
-      let planetData;
-      let currPlanet = 'mercury';
-      let prevPlanet = '';
-      let currentIndex = 0;
-      let currContent = 'overview';
-      let prevContent = '';
-
-      fetch('js/data.json')
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          planetData = data;
-        });
-      let flyInAnimComplete = true;
-      function flyInAnim(target) {
-        const planetImgcurrently = currPlanet;
-        planetImg.src = `assets/img/planet-${planetImgcurrently}.svg`;
-        flyInAnimComplete = false;
-        anime({
-          targets: target,
-          translateX: [
-            { value: -800, duration: 0, delay: 0 },
-            { value: 0, duration: 1000, delay: 0 },
-          ],
-          translateY: [
-            { value: 800, duration: 0, delay: 0 },
-            { value: 0, duration: 1000, delay: 0 },
-          ],
-          scale: [
-            { value: 1.4, duration: 200, delay: 0, easing: 'easeOutExpo' },
-            { value: 1, duration: 1000 },
-          ],
-          opacity: '1',
-          easing: 'easeOutElastic(1, .8)',
-          loop: false,
-          complete: () => {
-            flyInAnimComplete = true;
-          },
-        });
-      }
-
-      function flyOutAnim(target) {
-        flyInAnimComplete = false;
-        anime({
-          targets: target,
-          // translateX: [
-          //   // fly out
-          //   { value: 0, duration: 0, delay: 0 },
-          //   { value: 200, duration: 700, delay: 0 },
-          // ],
-          // translateY: [
-          //   { value: 0, duration: 0, delay: 0 },
-          //   { value: -200, duration: 700, delay: 0 },
-          // ],
-          opacity: [
-            {
-              duration: 500,
-              value: '0',
-            },
-          ],
-          scale: [{ value: 0, duration: 100, delay: 0, easing: 'easeOutExpo' }],
-          easing: 'easeOutElastic(1, .8)',
-          loop: false,
-          complete: () => {
-            flyInAnim(target);
-          },
-        });
-      }
-
-      const activateCurrPlanetLink = () => {
-        planetLinks.forEach(planetLink => {
-          if (
-            planetLink.dataset.planetname === planetSection.dataset.planetname
-          ) {
-            console.log('hi');
-            planetLink.classList.add('active');
-            planetLink.classList.add('active-tablet');
-          } else {
-            console.log('bye');
-            planetLink.classList.remove('active');
-            planetLink.classList.remove('active-tablet');
-          }
-        });
-      };
-
-      // const currPlanet = {
-      //   planetname: 'mercury',
-      //   get name() {
-      //     return this.planetname;
-      //   },
-      //   set name(inputName) {
-      //     this.planetname = inputName;
-      //     console.log('The current planet is ' + this.planetname);
-      //   },
-      // };
-
-      // const prevPlanet = {
-      //   planetname: '',
-      //   get name() {
-      //     return this.planetname;
-      //   },
-      //   set name(inputName) {
-      //     this.planetname = inputName;
-      //     console.log('The current planet is ' + this.planetname);
-      //   },
-      // };
-
-      contentLinks.forEach(contentLink => {
-        contentLink.addEventListener('click', e => {
-          console.log(flyInAnimComplete);
-          if (flyInAnimComplete) {
-            if (!e.target.classList.contains('active')) {
-              // prevent clicking on the contentLink that is already active
-              changeContent(e.target.dataset.contentname);
-            }
-
-            console.log(e.target.dataset.contentname);
-            contentLinks.forEach(contentLink => {
-              contentLink.classList.remove('active');
-              if (
-                contentLink.dataset.contentname === e.target.dataset.contentname
-              ) {
-                contentLink.classList.add('active');
-              }
-            });
-          }
-        });
-      });
-
-      // Clicking on planets' names links
-      planetLinks.forEach(planetLink => {
-        planetLink.addEventListener('click', e => {
-          // changing planets content
-          changePlanet(
-            planetLink.dataset.planetnumber,
-            planetLink.dataset.planetname
-          );
-
-          // changing active links
-          // if we are on mobile
-          if (e.target.closest('li').classList.contains('toggle-item')) {
-            e.target.closest('li').classList.add('clicked');
-
-            toggle.classList.remove('clicked');
-            setTimeout(() => {
-              hamburgerMenu.classList.add('hide');
-              hamburgerMenu.classList.remove('showing');
-              document.querySelector('main').style.display = 'block';
-              document.querySelector('.hamMenubg').classList.remove('active');
-              anime({
-                targets: '.toggle-item',
-                translateX: -800,
-                delay: anime.stagger(100),
-              });
-            }, 600);
-
-            activateCurrPlanetLink();
-          }
-
-          // if we are on tablet+
-          if (
-            e.target
-              .closest('li')
-              .parentElement.parentElement.classList.contains('d-none')
-          ) {
-            console.log('what');
-            activateCurrPlanetLink();
-          }
-        });
-      });
-
-      function changePlanet(planetnumber, planetname) {
-        // prevent anything from happening when clicking on the current planet's link
-        if (planetname === currPlanet) return null;
-        flyOutAnim(planetImg);
-        prevPlanet = currPlanet;
-        currPlanet = planetname;
-        console.log(currPlanet, prevPlanet);
-        currentIndex = planetnumber;
-
-        changeContent('overview');
-
-        // changing elements that differ between planets
-        planetDiffs.forEach(planetDiff => {
-          if (planetDiff.classList.contains('title')) {
-            planetDiff.innerHTML = planetData[currentIndex].name;
-          }
-          if (planetDiff.classList.contains('rotation')) {
-            planetDiff.innerHTML = planetData[currentIndex].rotation;
-          }
-          if (planetDiff.classList.contains('revolution')) {
-            planetDiff.innerHTML = planetData[currentIndex].revolution;
-          }
-          if (planetDiff.classList.contains('radius')) {
-            planetDiff.innerHTML = planetData[currentIndex].radius;
-          }
-          if (planetDiff.classList.contains('temperature')) {
-            planetDiff.innerHTML = planetData[currentIndex].temperature;
-          }
-
-          planetSection.dataset.planetname = currPlanet;
-        });
-      }
-
-      function changeContent(content) {
-        currContent = content;
-        prevContent = currContent;
-        contentDiffs.forEach(contentDiff => {
-          switch (content) {
-            case 'overview':
-              // activating the overview link for when the planet changes
-              contentLinks.forEach(contentLink => {
-                if (contentLink.classList.contains('overview')) {
-                  contentLink.classList.add('active');
-                } else {
-                  contentLink.classList.remove('active');
-                }
-              });
-
-              planetGeoImg.classList.add('hide');
-
-              if (contentDiff.classList.contains('planet-img')) {
-                contentDiff.src = planetData[currentIndex].images.planet;
-              }
-              if (contentDiff.classList.contains('planet__paragraph'))
-                contentDiff.innerHTML =
-                  planetData[currentIndex].overview.content;
-              if (contentDiff.classList.contains('source'))
-                contentDiff.href = planetData[currentIndex].overview.source;
-              break;
-
-            case 'structure':
-              planetGeoImg.classList.add('hide');
-              if (contentDiff.classList.contains('planet-img')) {
-                contentDiff.src = planetData[currentIndex].images.internal;
-              }
-              if (contentDiff.classList.contains('planet__paragraph'))
-                contentDiff.innerHTML =
-                  planetData[currentIndex].structure.content;
-              if (contentDiff.classList.contains('source'))
-                contentDiff.href = planetData[currentIndex].structure.source;
-              break;
-
-            case 'geology':
-              planetGeoImg.classList.remove('hide');
-              planetGeoImg.src = planetData[currentIndex].images.geology;
-              if (contentDiff.classList.contains('planet-img')) {
-                contentDiff.src = planetData[currentIndex].images.planet;
-              }
-              if (contentDiff.classList.contains('planet__paragraph'))
-                contentDiff.innerHTML =
-                  planetData[currentIndex].geology.content;
-              if (contentDiff.classList.contains('source'))
-                contentDiff.href = planetData[currentIndex].geology.source;
-              break;
-          }
-        });
-      }
-
-      toggle.querySelector('i').addEventListener('click', () => {
-        toggle.classList.toggle('clicked');
-        planetLinks.forEach(planetLink =>
-          planetLink.classList.remove('clicked')
-        );
-        if (!hamburgerMenu.classList.contains('showing')) {
-          hamburgerMenu.classList.remove('hide');
-          hamburgerMenu.classList.add('showing');
-          document.querySelector('main').style.display = 'none';
-          document.querySelector('.hamMenubg').classList.add('active');
-          anime({
-            targets: '.toggle-item',
-            translateX: [-800, 10],
-            delay: anime.stagger(100),
-          });
-        } else {
-          hamburgerMenu.classList.remove('showing');
-          hamburgerMenu.classList.add('hide');
-          document.querySelector('main').style.display = 'block';
-          document.querySelector('.hamMenubg').classList.remove('active');
-          anime({
-            targets: '.toggle-item',
-            translateX: -800,
-            delay: anime.stagger(100),
-          });
-        }
-      });
-    </script>
+    <!-- Custom script -->
     <script src="js/script.js"></script>
   </body>
 </html>

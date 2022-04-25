@@ -1,6 +1,5 @@
 @use 'variables' as *;
 
-// DONE
 body {
   position: relative;
   font-family: var(--ff-main);
@@ -10,14 +9,9 @@ body {
   overflow-x: hidden;
 }
 
-.heading-med {
+.heading-primary {
   font-family: var(--ff-heading-med);
   font-weight: 500;
-}
-
-// DONE
-.heading-primary {
   font-size: 2.8rem;
-  font-weight: 400;
   letter-spacing: -1.05px;
 }

@@ -1,9 +1,10 @@
 @use '../base/variables' as *;
-@use '../base/animations';
+@use '../base/animations' as *;
 
-// DONE
 .bg {
   position: absolute;
+  left: 0%;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -40,5 +41,24 @@
       opacity: 0;
       overflow: hidden;
     }
+  }
+}
+
+.mobile-menu__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-primary);
+  opacity: 0;
+  visibility: hidden;
+
+  &.deactive {
+    animation: fadeoutMenu 1s forwards;
+  }
+
+  &.active {
+    animation: fadeinMenu 0.4s forwards;
   }
 }
