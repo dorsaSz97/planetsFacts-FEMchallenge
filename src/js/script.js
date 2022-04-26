@@ -1,5 +1,5 @@
 'use strict';
-
+// A LOT OF INSPIRATION FROM seanred360 *****
 const body = document.querySelector('body');
 const sky = document.querySelector('.sky');
 const shootingstars = document.querySelector('.shootingstars');
