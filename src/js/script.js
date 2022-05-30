@@ -229,7 +229,7 @@ planetLinks.forEach(planetLink => {
 
       toggle.classList.remove('clicked');
       setTimeout(() => {
-        hamburgerMenu.classList.add('hide');
+        hamburgerMenu.classList.toggle('hide');
         hamburgerMenu.classList.remove('showing');
         mainSection.style.display = 'block';
         hamburgerMenuBg.classList.remove('active');
