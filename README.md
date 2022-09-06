@@ -1,6 +1,6 @@
 # Planets Facts Website | FEM Challenge
 
-This is my 21st project which is one of the Frontend Mentor's challenges for displaying facts about planets. (responsive)
+This is one of the Frontend Mentor's challenges for displaying facts about planets.
 
 ## Screenshot
 
